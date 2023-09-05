@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (your head content remains the same) ... -->
+</head>
+<body>
+<h3>Employee details:</h3>
+<hr>
+<table class="table table-condensed table-striped table-hover">
+    <thead class="table-bordered">
+    <tr>
+        <th scope="col">Employee ID</th>
+        <th scope="col">Employee Name</th>
+        <th scope="col">Employee Department</th>
+        <th scope="col">Organization ID</th>
+        <th scope="col">Organization Name</th>
+        <th scope="col">State Code</th>
+        <th scope="col">State</th>
+        <th scope="col">District Code</th>
+        <th scope="col">District</th>
+        <th scope="col">Employee Office Location</th>
+        <th scope="col">Employee Location Name</th>
+        <th scope="col">Employee Org Dept ID</th>
+        <th scope="col">Employee Category</th>
+        <th scope="col">Date of Birth</th>
+        <th scope="col">Gender</th>
+        <th scope="col">Employee Email</th>
+        <th scope="col">Employee Mobile</th>
+        <th scope="col">Attendance Date</th>
+        <th scope="col">Attendance Type</th>
+        <th scope="col">In Device ID</th>
+        <th scope="col">In Time</th>
+        <th scope="col">In Device Type</th>
+        <th scope="col">In Bio Device ID</th>
+        <th scope="col">In Device MAC</th>
+        <th scope="col">In Device Office Location</th>
+        <th scope="col">In Device Entry Point</th>
+        <th scope="col">Out Device ID</th>
+        <th scope="col">Out Time</th>
+        <th scope="col">Out Device Type</th>
+        <th scope="col">Out Bio Device ID</th>
+        <th scope="col">Out Device MAC</th>
+        <th scope="col">Out Device Office Location</th>
+        <th scope="col">Out Device Entry Point</th>
+        <th scope="col">Stay Duration</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for employee in employees %}
+    <tr>
+        <td>{{ employee.emp_id }}</td>
+        <td>{{ employee.emp_name }}</td>
+        <td>{{ employee.emp_department }}</td>
+        <td>{{ employee.org_id }}</td>
+        <td>{{ employee.org_name }}</td>
+        <td>{{ employee.scode }}</td>
+        <td>{{ employee.state }}</td>
+        <td>{{ employee.dcode }}</td>
+        <td>{{ employee.district }}</td>
+        <td>{{ employee.emp_office_loc }}</td>
+        <td>{{ employee.emp_loc_name }}</td>
+        <td>{{ employee.emp_org_dept_id }}</td>
+        <td>{{ employee.emp_cat }}</td>
+        <td>{{ employee.emp_dob }}</td>
+        <td>{{ employee.gender }}</td>
+        <td>{{ employee.emp_mail }}</td>
+        <td>{{ employee.emp_mobile }}</td>
+        <td>{{ employee.att_date }}</td>
+        <td>{{ employee.at_type }}</td>
+        <td>{{ employee.in_device_id }}</td>
+        <td>{{ employee.in_time }}</td>
+        <td>{{ employee.in_device_type }}</td>
+        <td>{{ employee.in_bio_device_id }}</td>
+        <td>{{ employee.in_device_mac }}</td>
+        <td>{{ employee.in_device_office_loc }}</td>
+        <td>{{ employee.in_device_entry_point }}</td>
+        <td>{{ employee.out_device_id }}</td>
+        <td>{{ employee.out_time }}</td>
+        <td>{{ employee.out_device_type }}</td>
+        <td>{{ employee.out_bio_device_id }}</td>
+        <td>{{ employee.out_device_mac }}</td>
+        <td>{{ employee.out_device_office_loc }}</td>
+        <td>{{ employee.out_device_entry_point }}</td>
+        <td>{{ employee.stay_duration }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
